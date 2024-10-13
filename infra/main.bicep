@@ -33,6 +33,10 @@ module webAppModule 'br/public:avm/res/web/site:0.9.0' = {
     siteConfig: {
       linuxFxVersion: 'PYTHON|3.11'
     }
+    appSettingsKeyValuePairs: {
+      ENABLE_ORYX_BUILD: 'False'  // Disable automatic Oryx build process during deployment to improve speed
+      SCM_DO_BUILD_DURING_DEPLOYMENT: 'False' // Disable build during deployment to improve speed
+    }
   }
 }
 
