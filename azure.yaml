@@ -1,0 +1,6 @@
+name: python-hello-world-azure-web-apps
+services:
+  web:
+    project: ./src
+    language: python
+    host: appservice
