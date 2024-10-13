@@ -8,7 +8,7 @@ param appServicePlanName string = 'plan-${uniqueString(resourceGroup().id)}'
 param webAppName string = 'app-${uniqueString(resourceGroup().id)}'
 
 @description('The SKU of the App Service Plan.')
-param skuName string = 'P1v3'
+param skuName string = 'S1'
 
 // Import public module for App Service Plan
 module appServicePlanModule 'br/public:avm/res/web/serverfarm:0.2.4' = {
